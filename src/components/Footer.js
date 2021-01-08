@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <Container className = 'footer'>
+        <Container className = 'footer mt-5'>
 
         <Row>
             <Col className='mb-2'>
@@ -18,10 +18,9 @@ const Footer = () => {
             // need to add social links
         }
             <Row>
-                <Col xs='6' lg='3'>
+                <Col xs='6' lg='3' className='mb-3'>
                     <a href="/"><p>Audio and Subtitles</p></a>
                     <a href="/"><p>Media Center</p></a>
-                    <a href="/"><p>Privacy</p></a>
                     <a href="/"><p>Contact Us</p></a>
                 </Col>
                 <Col xs='6' lg='3'>

@@ -7,7 +7,6 @@ import {
   Nav,
   NavItem,
   NavLink,
-  Button
 } from 'reactstrap';
 
 import logo from "../images/loflix-logo.png";
