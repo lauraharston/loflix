@@ -1,5 +1,6 @@
 import React, {Component} from 'react'; 
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col} from 'reactstrap';
+
 
 
 
@@ -25,24 +26,29 @@ class Home extends Component {
     
 
     renderBanner = () => {
+        let trendingMovies = this.state.trendingMovies.results
         let a = Math.floor(Math.random() * 20)
         if(this.state.trendingMovies.results) {
-            const backDrop = this.state.trendingMovies.results[a].backdrop_path
-            const prefix = 'http://image.tmdb.org/t/p/w1280/'
-            return <img src={prefix+backDrop} alt='hero'/>
+            const backDrop = trendingMovies[a].backdrop_path
+            const prefix = 'http://image.tmdb.org/t/p/original/'
+            return (
+                <Container className="Home" fluid={true}>
+                    <h1>{trendingMovies[a].title}</h1>
+                    <button className="btn">More info</button>
+                    <img src={prefix+backDrop} alt='hero' id='Hero' className="img-fluid"/>
+                </Container>
+                
+            )
         }
     }
 
 
+
         render() {   
             return(
-                <Container className="Home" fluid={true}>
-                <Row>
-                    <Col>
-                    {this.renderBanner()}
-                    </Col>
-                </Row>   
-                </Container>
+                <div>
+                    {this.renderBanner()}          
+                </div>
             ) 
         }
     }
