@@ -37,10 +37,15 @@ class Home extends Component {
     renderCarousel = () => {
         let trendingMovies = this.state.trendingMovies.results
         if(trendingMovies) {
-            trendingMovies.map(trendingMovie => {
-                console.log(trendingMovie.title)
+            return trendingMovies.map((movie,index) => {
+                let backDrop = movie.backdrop_path
+                let prefix = 'http://image.tmdb.org/t/p/w300/'
                 return(
-                    <p>{trendingMovie.title}</p>
+                    <div className='trending-carousel'>
+                         <img src={prefix+backDrop} alt='poster'/>
+                        <p key={index}>{movie.title}</p> 
+                    </div>
+                    
                 )
                 
             })
@@ -107,6 +112,7 @@ class Home extends Component {
             return(
                 <div>
                     {this.renderBanner()}
+                    <h2 style={{'color':'rgba(255, 255, 255, 0.5)'}}>Trending Now</h2>
                     {this.renderCarousel()}
                 </div>
             ) 
