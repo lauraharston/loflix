@@ -6,3 +6,32 @@ body {
   color: rgba(255, 255, 255, 0.5) !important;
   text-decoration: none !important; 
 }
+
+.rottenTomato {
+  color: red;
+}
+
+.modal-body, .modal-header {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.movie-spotlight {
+  position: relative !important;
+  height: 100vh;
+}
+#Hero {
+  z-index: 0 !important;
+  object-position: center !important;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+}
+
+.banner-title,.banner-button   {
+  z-index: 1  !important;
+  position: relative !important;
+}
+
+
