@@ -12,7 +12,6 @@ import { GiTomato } from "react-icons/gi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
-import "./index.css";
 
 SwiperCore.use([Navigation]);
 
@@ -49,7 +48,7 @@ class Home extends Component {
 
   // Render banner elements + modal
   renderBanner = () => {
-    let trendingMovies = this.state.trendingMovies.results;
+    const trendingMovies = this.state.trendingMovies.results;
     //let a = Math.floor(Math.random() * 20)
     if (this.state.trendingMovies.results) {
       const backDrop = trendingMovies[3].backdrop_path;
@@ -146,8 +145,9 @@ class Home extends Component {
           wrapperTag="ul"
           id="main"
           navigation
-          spaceBetween={50}
-          slidesPerView={5}
+          spaceBetween={5}
+          slidesPerView={8}
+          slidesPerGroup={3}
         >
           {slides}
         </Swiper>
@@ -162,7 +162,10 @@ class Home extends Component {
         <h2 style={{ color: "rgba(255, 255, 255, 0.5)" }}>Trending Now</h2>
         {this.renderCarousel()}
       </div>
-    );
+    )
+    
+  
+    
   }
 }
 
