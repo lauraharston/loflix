@@ -1,12 +1,13 @@
 body {
   background-color: black !important; 
 }
-
+/*Footer*/
 .footer a {
   color: rgba(255, 255, 255, 0.5) !important;
   text-decoration: none !important; 
 }
 
+/*Modal*/
 .rottenTomato {
   color: red;
 }
@@ -16,6 +17,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/*Movie spotlight*/
 .movie-spotlight {
   position: relative !important;
   height: 105vh;
@@ -34,8 +36,17 @@ body {
   position: relative !important;
 }
 
+/*Carousel*/
+
 .trending-carousel {
   color:rgba(255, 255, 255, 0.5)
 }
 
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  padding-inline-start:0;
+}
 
