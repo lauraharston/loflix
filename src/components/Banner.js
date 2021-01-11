@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import {
-  Container,
   Row,
   Col,
-  Button,
   Modal,
   ModalHeader,
-  ModalBody,
+  ModalBody
 } from "reactstrap";
 import { GiTomato } from "react-icons/gi";
 
@@ -26,7 +24,6 @@ class Banner extends Component {
   }
 
   renderBanner = () => {
-   
     //let a = Math.floor(Math.random() * 20)
     if (this.props.trendingMovies) {
       const backDrop = this.props.trendingMovies[3].backdrop_path;
@@ -46,7 +43,9 @@ class Banner extends Component {
             <div className="container movie-spotlight-btn-title">
               <Row>
                 <Col className="mt-5">
-                  <h1 className="banner-title">{this.props.trendingMovies[3].title}</h1>
+                  <h1 className="banner-title">
+                    {this.props.trendingMovies[3].title}
+                  </h1>
                 </Col>
               </Row>
               <Row>
@@ -96,11 +95,7 @@ class Banner extends Component {
     }
   };
   render() {
-      return(
-          <div>
-              {this.renderBanner()}
-          </div>
-      )
+    return <div>{this.renderBanner()}</div>;
   }
 }
 
