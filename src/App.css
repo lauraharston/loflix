@@ -48,13 +48,15 @@ body {
 
 .swiper-wrapper {
   padding-inline-start:0;
+  padding: 20px 0;
 }
 
 .swiper-slide {
-  transition: 0.3s;
+  transition: 250ms all;
 }
 .swiper-slide:hover {
-  transform: translate(0, -20px);
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 .swiper-slide, img {
@@ -64,4 +66,5 @@ body {
 
 :root {
   --swiper-theme-color: white;
+
 }
