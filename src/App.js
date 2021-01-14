@@ -15,6 +15,7 @@ function App() {
       <Header />
       <Home />
       <Movies />
+      <TVShows />
       <Footer />
     </div>
   );

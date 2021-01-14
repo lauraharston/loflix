@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Carousel from "../components/Carousel";
 
 
 class Movies extends Component {
@@ -84,6 +85,7 @@ class Movies extends Component {
     
       componentDidMount() {
         this.setState({ loading: true });
+        
         this.fetchClassicMovies();
         this.fetchAnimationMovies();
         this.fetchMusicMovies();
@@ -92,12 +94,19 @@ class Movies extends Component {
       }
 
       render(){
-          if(this.state.documentaries) {
-              console.log(this.state.documentaries)
-          }
           return(
               <div>
-
+                <h4 style={{color: "white" }}>Classic</h4>
+                <Carousel movies={this.state.classicMovies.results}/>
+                <h4 style={{ color: "white" }}>Animation</h4>
+                <Carousel movies={this.state.animationMovies.results}/>
+                <h4 style={{color: "white" }}>Music</h4>
+                <Carousel movies={this.state.musicMovies.results}/>
+                <h4 style={{color: "white" }}>Adventure</h4>
+                <Carousel movies={this.state.adventureMovies.results}/>
+                <h4 style={{ color: "white"  }}>Documentaries</h4>
+                <Carousel movies={this.state.documentaries.results}/>
+                
               </div>
           )
       }

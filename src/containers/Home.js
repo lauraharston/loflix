@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import Banner from "../components/Banner";
 import Carousel from "../components/Carousel";
 
@@ -86,13 +85,13 @@ class Home extends Component {
     return (
       <div>
         <Banner movie={this.state.trendingAll.results} />
-        <h4 style={{ color: "rgba(255, 255, 255, 0.5)" }}>Trending Now</h4>
+        <h4 style={{color: "white"  }}>Trending Now</h4>
         <Carousel movies={this.state.trendingAll.results} />
-        <h4 style={{ color: "rgba(255, 255, 255, 0.5)" }}>Action</h4>
+        <h4 style={{ color: "white" }}>Action</h4>
         <Carousel movies={this.state.discoverActionAll.results} />
-        <h4 style={{ color: "rgba(255, 255, 255, 0.5)" }}>Comedy</h4>
+        <h4 style={{color: "white"  }}>Comedy</h4>
         <Carousel movies={this.state.discoverComedyAll.results} />
-        <h4 style={{ color: "rgba(255, 255, 255, 0.5)" }}>Drama TV Shows</h4>
+        <h4 style={{ color: "white"  }}>Drama TV Shows</h4>
         <Carousel movies={this.state.discoverDramaTV.results} />
       </div>
     );
