@@ -12,7 +12,6 @@ class Home extends Component {
       discoverActionAll: {},
       discoverComedyAll: {},
       discoverDramaTV: {},
-      tvShowsGenres: {}
     };
   }
 
@@ -29,7 +28,6 @@ class Home extends Component {
           trendingAll: data,
         })
       );
-
   }
 
   fetchAction = () =>{
@@ -61,7 +59,7 @@ class Home extends Component {
 
   fetchDramaTV = () =>{
     fetch(
-      `https://api.themoviedb.org/3/discover/tv?api_key=33c83117cdcfaedd7e0a436b3ed21be5&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=18&include_null_first_air_dates=false`
+      `https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_LOFLIX_API_KEY}&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=18&include_null_first_air_dates=false`
     )
       .then((response) => response.json())
       .then((data) =>
@@ -71,31 +69,14 @@ class Home extends Component {
         })
       );
   }
-
-  fetchTVShowsGenres = () =>{
-    fetch(
-      `https://api.themoviedb.org/3/genre/tv/list?api_key=33c83117cdcfaedd7e0a436b3ed21be5&language=en-US`
-    )
-      .then((response) => response.json())
-      .then((data) =>
-        this.setState({
-          loading: false,
-          tvShowsGenres: data,
-        })
-      );
-  }
   
 
-  // Fetching trending movies list
   componentDidMount() {
     this.setState({ loading: true });
       this.fetchTrendingAll();
       this.fetchAction();
       this.fetchComedy();
       this.fetchDramaTV();
-   
-  
-    
   }
 
   render() {
