@@ -38,6 +38,12 @@ body {
   position: relative !important;
 }
 
+.modal-title {
+  padding-left: 0.5rem !important;
+  margin-left: 3rem !important;
+}
+
+
 /*Carousel*/
 
 .trending-carousel {
