@@ -6,9 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from 'reactstrap';
 
+import {NavLink} from 'react-router-dom'
 import logo from "../images/loflix-logo.png";
 
 
@@ -27,13 +27,13 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <NavLink className="nav-link" to='/home'>Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Movies</NavLink>
+              <NavLink className="nav-link" to='/movies'>Movies</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">TV Shows</NavLink>
+              <NavLink className="nav-link" to='/tvshows'>TV Shows</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
