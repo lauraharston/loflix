@@ -12,9 +12,9 @@ class Carousel extends Component {
     renderCarousel = () => {
         const slides = [];
     
-        if (this.props.trendingMovies) {
-          for (let i = 0; i < this.props.trendingMovies.length; i++) {
-            let imgSrc = `http://image.tmdb.org/t/p/w185/${this.props.trendingMovies[i].poster_path}`;
+        if (this.props.movies) {
+          for (let i = 0; i < this.props.movies.length; i++) {
+            let imgSrc = `http://image.tmdb.org/t/p/w185/${this.props.movies[i].poster_path}`;
             slides.push(
               <SwiperSlide key={`slide-${i}`} wrapperTag="li">
                 <img
