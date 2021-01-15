@@ -1,0 +1,47 @@
+/*  const slides = [];
+
+if (this.props.movies) {
+  for (let i = 0; i < this.props.movies.length; i++) {
+    let imgSrc = `http://image.tmdb.org/t/p/w185/${this.props.movies[i].poster_path}`;
+    slides.push(
+      <SwiperSlide key={`slide-${i}`} wrapperTag="li" onClick={this.toggleModal}>
+        <img
+          src={imgSrc}
+          style={{ listStyle: "none" }}
+          alt={`Slide ${i}`}
+          
+        />
+      </SwiperSlide>
+    );
+    <>
+    <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+      <ModalHeader toggle={this.toggleModal}>
+        <img
+          src={`http://image.tmdb.org/t/p/w300/${this.props.movies[i].backdrop_path}`}
+          alt="modal pic"
+          className="img-fluid"
+        />
+      </ModalHeader>
+      <ModalBody>
+        <Row>
+          <Col>
+            <h5>{this.props.movies[i].title}</h5>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="mb-2">
+            <GiTomato size={25} className="rottenTomato" />
+            {this.props.movies[i].vote_average}/10
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <p>{this.props.movies[i].overview}</p>
+          </Col>
+        </Row>
+      </ModalBody>
+    </Modal>
+    </>
+  }
+}
+*/

@@ -6,6 +6,7 @@ import {
   ModalHeader,
   ModalBody
 } from "reactstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { GiTomato } from "react-icons/gi";
 
 class Banner extends Component {
