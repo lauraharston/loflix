@@ -33,10 +33,12 @@ class Carousel extends Component {
     
     930: {
       slidesPerView: 6,
+      slidesPerGroup: 3
     },
 
     1024: {
       slidesPerView: 8,
+      slidesPerGroup: 4
     }
   }}
         >
