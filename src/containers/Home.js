@@ -85,7 +85,7 @@ class Home extends Component {
     return (
       <div>
         <Banner movie={this.state.trendingAll.results} />
-        <h4 style={{color: "white"  }}>Trending Now</h4>
+        <h4 style={{color: "white", position: "relative", zIndex: 1}}>Trending Now</h4>
         <Carousel movies={this.state.trendingAll.results} />
         <h4 style={{ color: "white" }}>Action</h4>
         <Carousel movies={this.state.discoverActionAll.results} />

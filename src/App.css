@@ -12,7 +12,7 @@ body {
 /*Banner*/
 .movie-spotlight {
   position: relative !important;
-  height: 105vh;
+  height: 70vh;
 }
 
 @media only screen and (max-width: 414px) {
