@@ -19,8 +19,14 @@ class Carousel extends Component {
           id="main"
           navigation
           spaceBetween={5}
-          slidesPerView={8}
+          slidesPerView={3}
           slidesPerGroup={3}
+          breakpoints={{
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 8,
+    }
+  }}
         >
           {this.props.movies.map((movie, i) => {
             return (
