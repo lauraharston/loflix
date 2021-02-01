@@ -23,7 +23,19 @@ class Carousel extends Component {
           slidesPerGroup={2}
           breakpoints={{
     // when window width is >= 640px
-    640: {
+    565: {
+      slidesPerView: 4,
+    },
+
+    764: {
+      slidesPerView: 5,
+    },
+    
+    930: {
+      slidesPerView: 6,
+    },
+
+    1024: {
       slidesPerView: 8,
     }
   }}
