@@ -79,9 +79,7 @@ class Home extends Component {
   }
 
   render() {
-    if(this.state.tvShowsGenres) {
-      console.log(this.state.tvShowsGenres)
-    }
+    
     return (
       <div>
         <Banner movie={this.state.trendingAll.results} />

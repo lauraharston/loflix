@@ -20,7 +20,7 @@ class Carousel extends Component {
           navigation
           spaceBetween={5}
           slidesPerView={3}
-          slidesPerGroup={3}
+          slidesPerGroup={2}
           breakpoints={{
     // when window width is >= 640px
     640: {
