@@ -52,7 +52,6 @@ class Slide extends Component {
     this.setState({
       isModalOpen: !this.state.isModalOpen,
     });
-    console.log("Click!!!!");
   }
 
   render() {
@@ -68,7 +67,7 @@ class Slide extends Component {
         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
           <ModalHeader toggle={this.toggleModal}>
             <img
-              src={`http://image.tmdb.org/t/p/w300/${movie.backdrop_path}`}
+              src={`http://image.tmdb.org/t/p/w780/${movie.backdrop_path}`}
               alt="modal pic"
               className="img-fluid"
             />

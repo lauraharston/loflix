@@ -7,6 +7,40 @@ body {
   text-decoration: none !important;
 }
 
+
+
+/*Banner*/
+.movie-spotlight {
+  position: relative !important;
+  height: 105vh;
+}
+
+@media only screen and (max-width: 414px) {
+  .movie-spotlight {
+    position: relative !important;
+    height: 33vh;
+  }
+}
+
+
+#Hero {
+  z-index: 0 !important;
+  object-position: center !important;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+}
+
+.banner-title {
+  color: white;
+}
+.banner-title,
+.banner-button {
+  z-index: 1 !important;
+  position: relative !important;
+}
+
 /*Modal*/
 .rottenTomato {
   color: red;
@@ -17,27 +51,6 @@ body {
   background-color: black;
   color: rgba(255, 255, 255, 0.5);
 }
-
-/*Movie spotlight*/
-.movie-spotlight {
-  position: relative !important;
-  height: 105vh;
-}
-#Hero {
-  z-index: 0 !important;
-  object-position: center !important;
-  object-fit: cover;
-  display: block;
-  overflow: hidden;
-  position: absolute;
-}
-
-.banner-title,
-.banner-button {
-  z-index: 1 !important;
-  position: relative !important;
-}
-
 .modal-title {
   padding-left: 0.8rem !important;
   margin-left: 3rem !important;

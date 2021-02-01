@@ -27,10 +27,10 @@ class Banner extends Component {
   renderBanner = () => {
     //let a = Math.floor(Math.random() * 20)
     if (this.props.movie) {
-      const backDrop = this.props.movie[6].backdrop_path;
+      const backDrop = this.props.movie[0].backdrop_path;
       const prefix = "http://image.tmdb.org/t/p/original/";
       const prefixModal = "http://image.tmdb.org/t/p/w342/";
-      const posterPath = this.props.movie[6].poster_path;
+      const posterPath = this.props.movie[0].poster_path;
 
       return (
         <div className="Home">
@@ -45,7 +45,7 @@ class Banner extends Component {
               <Row>
                 <Col className="mt-5">
                   <h1 className="banner-title">
-                    {this.props.movie[6].title}
+                    {this.props.movie[0].title}
                   </h1>
                 </Col>
               </Row>
@@ -75,18 +75,18 @@ class Banner extends Component {
             <ModalBody>
               <Row>
                 <Col>
-                  <h5>{this.props.movie[6].title}</h5>
+                  <h5>{this.props.movie[0].title}</h5>
                 </Col>
               </Row>
               <Row>
                 <Col className="mb-2">
                   <GiTomato size={25} className="rottenTomato" />
-                  {this.props.movie[6].vote_average}/10
+                  {this.props.movie[0].vote_average}/10
                 </Col>
               </Row>
               <Row>
                 <Col>
-                  <p>{this.props.movie[6].overview}</p>
+                  <p>{this.props.movie[0].overview}</p>
                 </Col>
               </Row>
             </ModalBody>

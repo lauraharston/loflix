@@ -21,7 +21,7 @@ const Header = (props) => {
     <div>
       <Navbar dark expand="md">
         <NavbarBrand href="/">
-          <img src={logo} height="90" width="90" alt="loflix-logo" />
+          <img src={logo} height="100" width="100" alt="loflix-logo" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
