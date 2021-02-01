@@ -15,9 +15,8 @@ body {
   height: 70vh;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 1023px) {
   .movie-spotlight {
-    position: relative !important;
     height: 33vh;
   }
 }
