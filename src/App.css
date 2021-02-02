@@ -62,11 +62,16 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.carousel-title {
+  color: white; 
+  position: relative; 
+  z-index: 1; 
+  margin-left: 1%
+}
+
 .swiper-container {
   width: 100%;
 }
-
-
 
 .swiper-wrapper {
   padding-inline-start: 0;

@@ -95,15 +95,15 @@ class TVShows extends Component {
     }
     return (
       <div>
-        <h4 style={{ color: "white" }}>Comedy</h4>
+        <h4 className='carousel-title'>Comedy</h4>
         <Carousel movies={this.state.comedy.results} />
-        <h4 style={{ color: "white" }}>Action Adventure</h4>
+        <h4 className='carousel-title'>Action Adventure</h4>
         <Carousel movies={this.state.actionAdventure.results} />
-        <h4 style={{ color: "white" }}>Family</h4>
+        <h4 className='carousel-title'>Family</h4>
         <Carousel movies={this.state.family.results} />
-        <h4 style={{ color: "white" }}>War & Politics</h4>
+        <h4 className='carousel-title'>War & Politics</h4>
         <Carousel movies={this.state.warPolitics.results} />
-        <h4 style={{ color: "white" }}>Mystery</h4>
+        <h4 className='carousel-title'>Mystery</h4>
         <Carousel movies={this.state.mystery.results} />
       </div>
     );

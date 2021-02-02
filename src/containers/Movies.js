@@ -96,15 +96,15 @@ class Movies extends Component {
       render(){
           return(
               <div>
-                <h4 style={{color: "white" }}>Classic</h4>
+                <h4 className='carousel-title'>Classic</h4>
                 <Carousel movies={this.state.classicMovies.results}/>
-                <h4 style={{ color: "white" }}>Animation</h4>
+                <h4 className='carousel-title'>Animation</h4>
                 <Carousel movies={this.state.animationMovies.results}/>
-                <h4 style={{color: "white" }}>Music</h4>
+                <h4 className='carousel-title'>Music</h4>
                 <Carousel movies={this.state.musicMovies.results}/>
-                <h4 style={{color: "white" }}>Adventure</h4>
+                <h4 className='carousel-title'>Adventure</h4>
                 <Carousel movies={this.state.adventureMovies.results}/>
-                <h4 style={{ color: "white"  }}>Documentaries</h4>
+                <h4 className='carousel-title'>Documentaries</h4>
                 <Carousel movies={this.state.documentaries.results}/>
                 
               </div>

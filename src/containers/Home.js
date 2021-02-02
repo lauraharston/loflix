@@ -83,13 +83,13 @@ class Home extends Component {
     return (
       <div>
         <Banner movie={this.state.trendingAll.results} />
-        <h4 style={{color: "white", position: "relative", zIndex: 1}}>Trending Now</h4>
+        <h4 className='carousel-title'>Trending Now</h4>
         <Carousel movies={this.state.trendingAll.results} />
-        <h4 style={{ color: "white" }}>Action</h4>
+        <h4 className='carousel-title'>Action</h4>
         <Carousel movies={this.state.discoverActionAll.results} />
-        <h4 style={{color: "white"  }}>Comedy</h4>
+        <h4 className='carousel-title'>Comedy</h4>
         <Carousel movies={this.state.discoverComedyAll.results} />
-        <h4 style={{ color: "white"  }}>Drama TV Shows</h4>
+        <h4 className='carousel-title'>Drama TV Shows</h4>
         <Carousel movies={this.state.discoverDramaTV.results} />
       </div>
     );
